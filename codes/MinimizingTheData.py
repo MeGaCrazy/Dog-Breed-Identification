@@ -9,8 +9,8 @@ def Most_freq():
     labels = pd.read_csv("..\labels.csv")
     class_frequency = labels.breed.value_counts()
     print("The Most Frequency classes in The DataSet:\nBreed                   Freq")
-    print(class_frequency.head())
-    ret_Most_freq_dog = class_frequency.head()
+    print(class_frequency.head(n=10))
+    ret_Most_freq_dog = class_frequency.head(n=10)
     return ret_Most_freq_dog.keys()
 
 
