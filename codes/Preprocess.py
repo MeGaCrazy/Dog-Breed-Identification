@@ -13,6 +13,10 @@ def top5class():
     return ret_Most_freq_dog.keys()
 
 
+def image2vec(img, size=(256, 256)):
+    return cv2.resize(image, )
+
+
 def data_reader():
     data = []
     labels = []
@@ -31,7 +35,8 @@ def data_reader():
             data.append(img)
     img_data = np.array(data)
     img_data = img_data.astype('float32')
-    img_data /= 255
+    img_data = img_data.flatten().reshape(img_data.shape[0], 256 * 256 * 3)
     label_data = np.array(labels)
     print('The Data is Ready.')
+    print('Number of m : ' + str(img_data.shape[0]) + " <<<<<>>>>> " + ' Number of Features is: ' + str(img_data.shape[1]))
     return img_data, label_data
