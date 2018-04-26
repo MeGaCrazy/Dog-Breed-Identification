@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="65f61cbf-3276-4320-9173-f09b6a185196" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codes/CONVNet.py" afterPath="$PROJECT_DIR$/codes/CONVNet.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,11 +51,21 @@
       <file leaf-file-name="CONVNet.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codes/CONVNet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="71" column="34" lean-forward="true" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
+            <state relative-caret-position="331">
+              <caret line="89" column="48" lean-forward="true" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
               <folding>
-                <element signature="e#83#120#0" expanded="true" />
+                <element signature="e#82#119#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CONVNet (1).py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/CONVNet (1).py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1515">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="119" selection-end-column="51" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,8 +73,8 @@
       <file leaf-file-name="SVM.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/codes/SVM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="5" />
+            <state relative-caret-position="340">
+              <caret line="32" column="87" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="32" selection-end-column="87" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -100,7 +111,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="561" />
     <option name="y" value="158" />
     <option name="width" value="1300" />
@@ -266,9 +277,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25402635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25402635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -363,16 +375,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codes/SVM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="39" column="5" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codes/SVM11.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-143">
@@ -391,12 +393,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Downloads/CONVNet (1).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1515">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="119" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codes/SVM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="32" column="87" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="32" selection-end-column="87" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/codes/CONVNet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="71" column="34" lean-forward="true" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
+        <state relative-caret-position="331">
+          <caret line="89" column="48" lean-forward="true" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
           <folding>
-            <element signature="e#83#120#0" expanded="true" />
+            <element signature="e#82#119#0" expanded="true" />
           </folding>
         </state>
       </provider>
