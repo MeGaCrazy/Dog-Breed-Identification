@@ -13,9 +13,6 @@ def top5class():
     return ret_Most_freq_dog.keys()
 
 
-def image2vec(img, size=(256, 256)):
-    return cv2.resize(image, )
-
 
 def data_reader():
     data = []
@@ -28,15 +25,15 @@ def data_reader():
         if str(row['breed']) in our_classes:
             image_path = "..\smallTrain/" + row['id'] + '.jpg'
             img = cv2.imread(image_path)
-            img = cv2.resize(img, (256, 256))
-            img = img.reshape([256, 256, 3])
+            img = cv2.resize(img, (80, 80))
+            img = img.reshape([80, 80, 3])
             cur_label = our_classes.get_loc(str(row['breed']))
             labels.append(cur_label)
             data.append(img)
     img_data = np.array(data)
     img_data = img_data.astype('float32')
-    img_data = img_data.flatten().reshape(img_data.shape[0], 256 * 256 * 3)
+    img_data = img_data.flatten().reshape(img_data.shape[0], 80 * 80 * 3)
     label_data = np.array(labels)
     print('The Data is Ready.')
     print('Number of m : ' + str(img_data.shape[0]) + " <<<<<>>>>> " + ' Number of Features is: ' + str(img_data.shape[1]))
-    return img_data, label_data
+    return img_data, label_data,our_classes
