@@ -11,33 +11,14 @@ from codes.Preprocess import *
 
 np.random.seed(1337)  # for reproducibility
 
-from keras.datasets import mnist
 from keras.models import Sequential
-from keras.layers import Dense, Dropout, Flatten
 from keras.layers import Conv2D, MaxPooling2D
-from keras.optimizers import SGD, Adam, RMSprop
-from keras.utils import np_utils
-from keras.callbacks import ModelCheckpoint, CSVLogger
-import tensorflow as tf
-from keras import backend as k
-from keras.applications.resnet50 import ResNet50
-from keras.preprocessing import image
-from keras.applications.resnet50 import preprocess_input, decode_predictions
-import numpy as np
 from keras.layers import GlobalAveragePooling2D, Dropout, BatchNormalization, Input, Dense, Convolution2D, MaxPooling2D, \
     AveragePooling2D, ZeroPadding2D, Dropout, Flatten, merge, Reshape, Activation
 from keras.models import Model
 from keras.optimizers import SGD
 from keras.utils import np_utils
-import numpy as np
-import argparse
-# import cv2
-import scipy.io
-from keras.datasets import cifar10
-from keras.preprocessing.image import ImageDataGenerator
-import tensorflow as tf
 from keras.callbacks import ModelCheckpoint, CSVLogger
-import keras.backend as K
 import warnings
 from sklearn.utils import shuffle
 from sklearn.cross_validation import train_test_split
@@ -49,12 +30,9 @@ warnings.filterwarnings('ignore')
 batch_size = 4
 nr_classes = 10
 nr_iterations = 10
-# (X_train, y_train), (X_test, y_test) = mnist.load_data()
-X, y, our_classes = data_reader()
+X, y, our_classes = data_reader(1)
 X, y = shuffle(X, y, random_state=2)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.2, random_state=4)
-# X_train = X_train.reshape(60000, 784)
-# X_test = X_test.reshape(10000, 784)
 
 X_train /= 255
 X_test /= 255
@@ -102,7 +80,7 @@ checkpoint = ModelCheckpoint(saved_weights_name,
                              verbose=1,
                              save_best_only=True,
                              mode='max')
-csv_logger = CSVLogger('v.csv')
+csv_logger = CSVLogger('CNN.csv')
 
 history = model.fit(X_train, Y_train,
                     batch_size=batch_size, nb_epoch=nr_iterations,

@@ -1,10 +1,5 @@
 import pandas as pd
 import os
-import numpy as np
-import matplotlib.pyplot as plt
-
-
-
 def Most_freq():
     labels = pd.read_csv("..\labels.csv")
     class_frequency = labels.breed.value_counts()

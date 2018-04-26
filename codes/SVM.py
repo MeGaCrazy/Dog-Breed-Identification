@@ -27,7 +27,7 @@ def categorical_hinge(y_true, y_pred):
 batch_size = 128
 nr_classes = 10
 nr_iterations = 10
-X, y, our_classes = data_reader()
+X, y, our_classes = data_reader(0)
 X, y = shuffle(X, y, random_state=2)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.2, random_state=4)
 X_train /= 255
@@ -57,7 +57,7 @@ checkpoint = ModelCheckpoint(saved_weights_name,
                              verbose=1,
                              save_best_only=True,
                              mode='max')
-csv_logger = CSVLogger('v.csv')
+csv_logger = CSVLogger('SVM.csv')
 
 history = model.fit(X_train, Y_train,
                     batch_size=batch_size, nb_epoch=nr_iterations,
