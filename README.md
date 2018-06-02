@@ -9,3 +9,4 @@
 1. Conventional neural network
 2. artificial neural network
 3. k nearest neighbor
+4. support vector machine
