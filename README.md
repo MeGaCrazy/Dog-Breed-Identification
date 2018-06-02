@@ -6,6 +6,6 @@
 
 
 ### The Designed and Implemented Models
-1. CNN
-2. ANN
-3. KNN
+1. Conventional neural network
+2. artificial neural network
+3. k nearest neighbor
